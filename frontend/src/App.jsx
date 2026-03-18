@@ -1,9 +1,12 @@
-import Main from './pages/Main'
+import Header from './pages/Header'
 
 function App() {
 
   return (
-    <Main />
+    <div className="bg-[#000000] text-[#FF8830]">
+      <Header />
+    </div>
+
   );
 }
 
