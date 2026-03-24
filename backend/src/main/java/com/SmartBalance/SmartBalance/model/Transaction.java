@@ -21,8 +21,15 @@ public class Transaction {
     private String description;
     private Long quantity;
     private BigDecimal value;
-    private LocalDate date;
+    private LocalDate date = LocalDate.now();
     private TransactionType type;
     private String buyer;
+
+    @PrePersist
+    public void prePersist() {
+        if (this.date == null) {
+            this.date = LocalDate.now();
+        }
+    }
 
 }
