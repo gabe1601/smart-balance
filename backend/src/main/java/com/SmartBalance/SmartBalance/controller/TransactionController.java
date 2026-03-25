@@ -11,6 +11,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigDecimal;
+
 @RestController
 @RequestMapping("/transaction")
 public class TransactionController {
@@ -43,6 +45,12 @@ public class TransactionController {
     public ResponseEntity delete (@PathVariable Long id){
         transactionService.delete(id);
         return ResponseEntity.ok().build();
+    }
+
+    @GetMapping("/sumValue")
+    @ResponseBody
+    public BigDecimal getValueSum(){
+        return transactionService.getValueSum();
     }
 
 

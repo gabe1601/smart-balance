@@ -10,6 +10,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.math.BigDecimal;
+
 
 @Service
 public class TransactionService {
@@ -56,4 +58,7 @@ public class TransactionService {
     public void delete (Long id){
         repository.deleteById(id);
     }
+
+    //return value
+    public BigDecimal getValueSum(){return repository.sumValuesByTypes();}
 }
