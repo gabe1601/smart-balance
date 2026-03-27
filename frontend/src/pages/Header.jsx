@@ -72,26 +72,26 @@ function Header({onProductSaved}) {
                             Saída
                         </label>
 
-                        <input className="duration-300 border rounded-md p-1 shadow-md bg-[#292929] focus:outline-none w-xs focus:bg-[#f2e3d5] focus:text-black"
+                        <input className="duration-300 border rounded-md p-1 shadow-xl/30 bg-[#292929] focus:outline-none w-xs focus:bg-[#f2e3d5] focus:text-black"
                             type="text"
                             placeholder="Descição"
                             value={description}
                             onChange={(e) => setDescription(e.target.value)}
                         />
-                        <input className={`duration-300 border rounded-md p-1 shadow-md bg-[#292929] focus:outline-none w-xs focus:bg-[#f2e3d5] focus:text-black
+                        <input className={`duration-300 border rounded-md p-1 shadow-xl/30 bg-[#292929] focus:outline-none w-xs focus:bg-[#f2e3d5] focus:text-black
                         ${type === "income" ? "opacity-100" : "opacity-30 pointer-events-none"}`}
                             type="text"
                             placeholder="Comprador"
                             value={buyer}
                             onChange={(e) => setBuyer(e.target.value)}
                         />
-                        <input className="duration-300 border rounded-md p-1 shadow-md bg-[#292929] focus:outline-none focus:bg-[#f2e3d5] focus:text-black"
+                        <input className="duration-300 border rounded-md p-1 shadow-xl/30 bg-[#292929] focus:outline-none focus:bg-[#f2e3d5] focus:text-black"
                             type="number"
                             placeholder="Quantidade"
                             value={quantity}
                             onChange={(e) => setQuantity(e.target.value)}
                         />
-                        <NumericFormat className="duration-300 border rounded-md p-1 shadow-md bg-[#292929] focus:outline-none focus:bg-[#f2e3d5] focus:text-black"
+                        <NumericFormat className="duration-300 border rounded-md p-1 shadow-xl/30 bg-[#292929] focus:outline-none focus:bg-[#f2e3d5] focus:text-black"
                             thousandSeparator="."
                             decimalSeparator=","
                             prefix="R$ "
@@ -104,7 +104,7 @@ function Header({onProductSaved}) {
                             }}
                         />
 
-                        <button onClick={handleSubmit} className="duration-300 flex items-center justify-center border rounded-md text-lg hover:text-xl text-[#8c7261]
+                        <button onClick={handleSubmit} className="duration-300 shadow-xl/30 flex items-center justify-center border rounded-md text-lg hover:text-xl text-[#8c7261]
                          bg-[#ffd9bf] hover:bg-[#FF8830] hover:text-[#1f1006] w-64 border rounded-xl cursor-pointer">
                             Cadastrar
                         </button>

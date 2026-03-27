@@ -201,7 +201,7 @@ function Content({ reload }) {
                                     setShowModal(false);
                                     setSelectId(null);
                                 }}
-                                className="px-4 py-2 bg-red-500 hover:bg-red-700 rounded"
+                                className="px-4 py-2 bg-red-500 hover:bg-red-700 rounded cursor-pointer"
                             >
                                 Sim
                             </button>
@@ -210,7 +210,7 @@ function Content({ reload }) {
                                     setShowModal(false);
                                     setSelectId(null);
                                 }}
-                                className="px-4 py-2 bg-gray-500 hover:bg-gray-700 rounded"
+                                className="px-4 py-2 bg-gray-500 hover:bg-gray-700 rounded cursor-pointer"
                             >
                                 Não
                             </button>
